@@ -3,8 +3,8 @@
 
 x=0
 
-until [ $x -le 10 ]
+until [ $x -lt 10 ]
 do
     echo "Best School": $x
-    ((counter++))
+    x="expr $x+ 1"
 done
