@@ -5,6 +5,6 @@ x=0
 
 until [ $x -lt 10 ]
 do
-    echo "Best School": $x
-    x="expr $x+ 1"
+    echo "Best School";
+    x=$((x+1))
 done
