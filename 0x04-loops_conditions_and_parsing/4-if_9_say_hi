@@ -7,6 +7,7 @@ while [ $x -lt 10 ]
 do
     ((x++))
     if [[ "$x" == '9' ]]; then
+	echo "Best School"
 	echo "Hi"
 	continue
     fi
