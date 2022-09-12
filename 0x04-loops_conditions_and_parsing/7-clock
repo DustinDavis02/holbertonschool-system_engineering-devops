@@ -5,11 +5,12 @@ x=0
 i=1
 while ((x <= 12))
       do
-	  echo "$x"
-	  x=$(( x + 1 ))
+	  echo "Hour: $x"
 	  while ((i <= 59))
 	  do
 	      echo "$i"
 	      i=$(( i + 1 ))
 	  done
+	  i=1
+	  x=$(( x + 1 ))
 done
