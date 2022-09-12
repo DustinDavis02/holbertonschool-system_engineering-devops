@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Displaying Best School for (while) loop.
+
+x=0
+
+until [ $x -le 10 ]
+do
+    echo "Best School": $x
+    ((counter++))
+done
