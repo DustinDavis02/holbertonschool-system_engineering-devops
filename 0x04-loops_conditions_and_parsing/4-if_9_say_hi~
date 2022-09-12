@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Display "Best School" with a iteration Displaying ""+Hi
+
+x=0
+
+while [ $x -lt 10 ]
+do
+    ((x++))
+    if [[ "$x" == '9' ]]; then
+	continue
+    fi
+    echo "Best School"
+done
