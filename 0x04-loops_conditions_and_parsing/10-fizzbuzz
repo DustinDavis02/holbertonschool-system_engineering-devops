@@ -1,2 +1,17 @@
 #!/usr/bin/env bash
 #Display numbers with intersects.
+
+for ((x=1;-le 100;x++))
+do
+    if ((x % 3 == 0 && x % 5 == 0))
+    then
+	echo "FizzBuzz"
+    elif ((x % 3 ==0))
+    then
+	echo "Fizz"
+    elif ((x % 5 ==0))
+    then
+	echo "Buzz"
+    else echo "$x"
+    fi
+done
