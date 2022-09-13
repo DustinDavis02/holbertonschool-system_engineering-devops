@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Infinity loop with a sigterm input.
 
-trap echo "I am invincible!!!" SIGTERM SIGINT
+trap "echo I am invincible!!!" SIGINT SIGTERM
 
 while :
 do
