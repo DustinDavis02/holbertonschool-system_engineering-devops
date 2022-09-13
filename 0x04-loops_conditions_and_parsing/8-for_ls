@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Make loop to show current directory
+
+for FILE
+in *;
+do
+    echo "$FILE";
+done

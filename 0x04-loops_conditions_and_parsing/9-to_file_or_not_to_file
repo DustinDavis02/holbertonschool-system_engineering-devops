@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Check if a file is empty or not and if not what message to display.
+
+x="school"
