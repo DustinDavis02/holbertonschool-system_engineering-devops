@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Infinity loop with a sigterm input.
+
+while :
+do
