@@ -4,5 +4,6 @@
 for FILE
 in *;
 do
+    ls -l
     echo "$FILE";
 done
