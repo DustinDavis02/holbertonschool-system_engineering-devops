@@ -1,5 +1,5 @@
 Host 5598-web-01
-    HostName 15.237.58.208
+    HostName 13.38.110.79
     User ubuntu
     IdentifyFile ~/.ssh/school
     IdentitiesOnly yes
