@@ -3,3 +3,11 @@
 
 import requests
 import sys
+
+
+
+if __name__ == "__main__":
+    # Check for correct number of arguments
+    if len(sys.argv) < 2:
+        print("Usage: {} employee_id".format(sys.argv[0]))
+        sys.exit(1)
