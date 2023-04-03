@@ -28,4 +28,11 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/users/{}".format(employee_id)
     response = requests.get(url)
     employee_name = response.json()['name']
-    
+
+   # Print progress report
+    print("Employee {} is done with tasks({}/{}):".format(employee_name,
+                                                           completed_tasks,
+                                                           total_tasks))
+    for task in tasks:
+        if task['completed']:
+            print("\t {}".format(task['title']))
