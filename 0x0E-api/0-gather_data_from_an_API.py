@@ -15,3 +15,7 @@ if __name__ == "__main__":
     # Define endpoint and employee ID
     url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(sys.argv[1])
     employee_id = sys.argv[1]
+
+    # Send request to API and parse response
+    response = requests.get(url)
+    tasks = response.json()
