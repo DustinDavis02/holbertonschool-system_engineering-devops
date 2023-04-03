@@ -19,3 +19,7 @@ if __name__ == "__main__":
     # Send request to API and parse response
     response = requests.get(url)
     tasks = response.json()
+
+    # Count number of completed tasks
+    total_tasks = len(tasks)
+    completed_tasks = sum(1 for task in tasks if task['completed'])
