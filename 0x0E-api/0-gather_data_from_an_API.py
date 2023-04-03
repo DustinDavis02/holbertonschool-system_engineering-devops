@@ -11,3 +11,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: {} employee_id".format(sys.argv[0]))
         sys.exit(1)
+        
+    # Define endpoint and employee ID
+    url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(sys.argv[1])
+    employee_id = sys.argv[1]
