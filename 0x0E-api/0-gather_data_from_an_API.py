@@ -23,3 +23,9 @@ if __name__ == "__main__":
     # Count number of completed tasks
     total_tasks = len(tasks)
     completed_tasks = sum(1 for task in tasks if task['completed'])
+    
+    # Get user's name
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(employee_id)
+    response = requests.get(url)
+    employee_name = response.json()['name']
+    
