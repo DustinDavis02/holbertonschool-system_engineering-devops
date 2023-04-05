@@ -10,7 +10,7 @@ import requests
 if __name__ == "__main__":
     # Define endpoint
     url = "https://jsonplaceholder.typicode.com/todos"
-    
+
     # Send request to API and parse response
     response = requests.get(url)
     tasks = response.json()
