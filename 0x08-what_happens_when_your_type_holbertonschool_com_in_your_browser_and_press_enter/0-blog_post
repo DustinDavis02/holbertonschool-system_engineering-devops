@@ -1,0 +1,19 @@
+Have you ever wondered what happens when you type a URL like https://www.holbertonschool.com into your browser and hit "Enter"? It might seem like magic, but there's actually a series of steps that occur behind the scenes to make the website appear on your screen. In this article, we'll explore each step of the process to help you better understand how the web stack works.
+
+The first thing that happens when you enter a URL in your browser is a DNS request. DNS, or Domain Name System, is responsible for translating the domain name you entered into an IP address that computers can use to communicate. Your browser sends a request to a DNS server to get the IP address of the website you want to visit. The DNS server responds with the IP address of the server that hosts the website.
+
+Next, a connection is established between your computer and the web server using the TCP/IP protocol. This protocol is responsible for connecting two devices and routing data packets between devices on the internet. Your computer sends a SYN packet to the web server to initiate the connection.
+
+The traffic is then filtered through a firewall to ensure that only authorized traffic is allowed to pass through and any malicious traffic is blocked.
+
+If the website you are visiting is using HTTPS, your browser will initiate an SSL handshake to establish a secure connection with the web server. SSL, or Secure Socket Layer, is a security protocol that encrypts data between your browser and the web server to protect it from interception and tampering.
+
+For high-traffic websites, a load balancer may be used to distribute incoming network traffic across multiple servers. This improves the performance and availability of the website by ensuring that the workload is evenly distributed.
+
+Once the traffic has passed through the firewall and load balancer, if present, it is sent to the web server. The web server is responsible for processing the request and generating a response. It retrieves the requested web page from the file system or cache and sends it back to the browser in the form of HTML, CSS, and JavaScript.
+
+For dynamic websites that generate content on the fly, an application server may be used. This software framework provides a runtime environment for applications to run. It processes requests from the web server, generates dynamic content, and sends it back to the web server to be served to the browser.
+
+If the website you are visiting requires data to be fetched from a database, the application server will make a request to the database server to retrieve the necessary data. The database server will retrieve the data and send it back to the application server, which will use it to generate the content that is sent to the web server.
+
+In conclusion, typing a URL into your browser and hitting "Enter" triggers a series of steps that bring the website to your screen. Each step in the process is crucial for the website to function properly. Understanding how this process works is essential for anyone working in the software engineering field.
